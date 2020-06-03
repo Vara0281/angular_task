@@ -1,0 +1,11 @@
+<h2 class="text-center mt-3">User Details</h2>
+<div class="card mx-auto col-md-5" *ngIf="user">
+  <span class="badge badge-pill badge-primary">{{ user.id }}</span>
+  <div class="card-image mx-auto mt-4">
+    <img [src]="user.avatar" />
+  </div>
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+    <h6 class="card-subtitle mb-2">{{ user.email }}</h6>
+  </div>
+</div>
